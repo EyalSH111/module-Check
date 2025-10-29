@@ -82,7 +82,7 @@ def main():
     cfg = load_config("config_module.json")
     auth = cfg["auth"]
 
-    export_dir = r"C:\Users\EyalShomrai\OneDrive - Blenergy\Operations-BL - מסמכים\O&M\Monitoring\Python projects\Module check\CSV"
+    export_dir = "put your own dir to save the CSV file"
     os.makedirs(export_dir, exist_ok=True)
 
     driver = setup_driver_headless(export_dir)
@@ -165,3 +165,4 @@ if __name__ == "__main__":
         main()
         print("\n⏱ Waiting 15 minutes for next check...")
         time.sleep(900)  # 15 minutes
+
